@@ -1,16 +1,16 @@
 <div style='background-color: orange;'>
-	<h1 style='background-color: rgba(0, 0, 0, 0); color: yellow; display: inline;'>Wow. <span style='color: blue'>Such coin.</span></h1>
+	<h1 style='background-color: rgba(0, 0, 0, 0); color: yellow; display: inline;'>wow. <span style='color: blue'>such coin.</span></h1>
 	<?php echo $this->Html->image("dogecoin.png", array('style' => 'height: 84px; vertical-align: top; float: right;', 'title' => "such image. wow.")); ?>
 </div>
 
 <div id="testy" style="width: 50%; height: 180; float: left;">
-	<h2 style='color: fuchsia;'>address</h2>
+	<h2 style='color: fuchsia;'>very address</h2>
 	<?php echo $this->Form->create('Trade', array('action' => 'setAddress')); ?>
-	<?php echo $this->Form->input('address', array('value' => $address, 'label' => "")); ?>
+	<?php echo $this->Form->input('address', array('value' => $address, 'label' => "", 'style' => 'font-size: 50px')); ?>
 	<?php echo $this->Form->end('Set address'); ?>
 </div>
 
-<div id="balance" style="width: 50%; height: 180px; float: right;">
+<div id="balance" style="width: 50%; height: 180px; float: right;">	
 	<h2 style='color: lime;'>much balance</h2>
 	<span style='font-size: 75px;'><?php echo $balance ?> </span>
 </div>
