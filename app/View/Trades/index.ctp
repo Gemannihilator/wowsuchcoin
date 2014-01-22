@@ -21,7 +21,7 @@
 	<h2 style='color: cyan;'>such value</h2>
 	<div class='ticker doge'>
 		<!--<marquee behavior="scroll" direction="left" scrollamount=15 style='font-size: 75px;'><?php echo $ticker->last?> BTC (£<?php echo round(($ticker->last * $balance) * $btc->GBP->last, 2); ?>)</marquee>-->
-		<span style='font-size: 75px;'><?php echo $ticker->last?> BTC (£<?php echo round(($ticker->last * $balance) * $btc->GBP->last, 2); ?>) </span>
+		<span style='font-size: 50px;'><?php echo $ticker->last?> DOGE/BTC (£<?php echo round(($ticker->last * $balance) * $btc->GBP->last, 2); ?>) </span>
 	</div>
 </div>
 
@@ -29,7 +29,7 @@
 	<h2 style='color: red'>so difficult</h2>
 	<div>
 		<!-- <marquee behavior="scroll" direction="left" scrollamount=15 style="font-size: 75px;"><?php echo $diff; ?></marquee> -->
-		<span style="font-size: 75px;"><?php echo $diff; ?></spa>
+		<span style="font-size: 50px;"><?php echo $diff; ?></spa>
 	</div>
 </div>
 
