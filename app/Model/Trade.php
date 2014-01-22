@@ -52,7 +52,12 @@ class Trade extends AppModel {
 	}
 
 	public function getMyBalance($address = null) {
-		return $this->getFromApi('http://dogechain.info/chain/Dogecoin/q/addressbalance/' . $address);
+		$result = $this->getFromApi('http://dogechain.info/chain/Dogecoin/q/addressbalance/' . $address);
+		if (empty($result))
+		{
+			$result = 0;
+		}
+		return $result;
 	}
 
 

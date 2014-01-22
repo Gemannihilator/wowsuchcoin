@@ -16,9 +16,8 @@ class TradesController extends AppController {
 
 	public function setAddress() {
 		if ($this->request->is('post')) {
-			pr($this->data);
 			$this->Cookie->write('address', $this->data['Trade']['address'], false, '+10 years');
-			$this->redirect('/trades/latest');
+			$this->redirect(array("controller" => "trades", "action" => "latest"));
 		}
 	}
 
