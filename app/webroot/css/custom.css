@@ -1,7 +1,58 @@
+body, h2{
+	font-family : "Comic Sans MS", cursive, sans-serif;
+}
+
+span{
+	color: black;
+}
+
+div#content{
+	background-color: beige;
+}
+
+h1{
+	font-size: 60px;
+}
+
+h2{
+	font-size: 30px;
+	background-color:	antiquewhite;
+}
+
+table td {
+	font-size:	15px;
+	font-weight: bold;
+}
+
+table tr:nth-child(odd) td{
+}
+
+table tr{
+	font-size:	25px;
+}
 
 div.ticker {
 
 }
+
+div#testy{
+	font-family : "Comic Sans MS", cursive, sans-serif;
+}
+
+div#testy label{
+	color:	aquamarine;
+	font-weight:	bold;
+	font-size:	20px;
+}
+
+form .submit input {
+	font-family : "Comic Sans MS", cursive, sans-serif;
+}
+
+input, textarea{
+	font-family : "Comic Sans MS", cursive, sans-serif;
+}
+
 
 div.doge span {
 	font-size: 60px;
