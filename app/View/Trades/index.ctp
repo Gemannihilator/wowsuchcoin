@@ -38,7 +38,7 @@
 <div>
 	<table>
 		<tr>
-			<th>Type</th>
+			<th>Trade Type</th>
 			<th>Amount</th>
 			<th>Price</th>
 			<th>Total</th>
@@ -51,8 +51,8 @@
 			<td>
 				<?php echo $trade->type; ?>:
 			</td>
-			<td><?php echo $trade->amount; ?></td>
-			<td><?php echo $trade->price; ?></td>
+			<td><?php echo $trade->amount; ?> DOGE</td>
+			<td><?php echo $trade->price; ?> DOGE/BTC</td>
 			<td><?php echo $trade->price * $trade->amount; ?> BTC</td>
 			<td><?php echo date('H:i:s', $trade->date); ?></td>
 		</tr>
