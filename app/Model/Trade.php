@@ -48,7 +48,7 @@ class Trade extends AppModel {
 
 
 	public function getBTCPrice() {
-		return $this->getFromApi('https://api.bitcoinaverage.com/ticker/global/all');
+		return $this->getFromApi('http://api.bitcoinaverage.com/ticker/global/all');
 	}
 
 	public function getMyBalance($address = null) {
