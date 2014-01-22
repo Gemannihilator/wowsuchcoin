@@ -7,7 +7,7 @@
 	<h2 style='color: fuchsia;'>very address</h2>
 	<?php echo $this->Form->create('Trade', array('action' => 'setAddress')); ?>
 	<?php echo $this->Form->input('address', array('value' => $address, 'label' => "", 'style' => 'font-size: 50px')); ?>
-	<?php echo $this->Form->end('Set address'); ?>
+	<?php echo $this->Form->end('To the MOOON', array('style' => '"Comic Sans MS", cursive, sans-serif;')); ?>
 </div>
 
 <div id="balance" style="width: 50%; height: 180px; float: right;">	
