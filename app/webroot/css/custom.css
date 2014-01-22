@@ -1,6 +1,30 @@
+body, h2{
+	font-family : "Comic Sans MS", cursive, sans-serif;
+}
+
+h1{
+	font-size: 60px;
+}
+
+table td {
+	font-weight: bolder;
+	font-size:	15px;
+}
 
 div.ticker {
 
+}
+
+div#testy{
+	font-family : "Comic Sans MS", cursive, sans-serif;
+}
+
+div#testy label{
+	color:	aquamarine;
+}
+
+div#testy input{
+	color:	brown;
 }
 
 div.doge span {

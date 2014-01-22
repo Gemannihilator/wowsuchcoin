@@ -1,23 +1,26 @@
-<h2>DOGE/BTC</h2> 
+<h1 style='color: yellow;';>Wow. <span style='color: blue'>Such coin.</span></h1> 
 
-
-<?php echo $this->Form->create('Trade', array('action' => 'setAddress')); ?>
-<?php echo $this->Form->input('address', array('value' => $address)); ?>
-<?php echo $this->Form->end('Set address'); ?>
-
-<h2>TO THE MO0N!: <?php echo $balance; ?></h2>
-<div class='ticker doge'>
-	<span><?php echo $ticker->last; ?> (£<?php echo round(($ticker->last * $balance) * $btc->GBP->last, 2); ?>)</span>
+<div id="testy">
+	<?php echo $this->Form->create('Trade', array('action' => 'setAddress')); ?>
+	<?php echo $this->Form->input('address', array('value' => $address, 'label' => "much address")); ?>
+	<?php echo $this->Form->end('Set address'); ?>
 </div>
 
-<h2>OMg teh diff!</h2>
-<span ></span>
-
-<div style='width: 700px;'>
-	<marquee behavior="alternate" direction="right" scrollamount=100 style="color: pink; font-size: 100px; width: 600px;"><?php echo $diff; ?> :D</marquee>
+<div style='float: left'>
+	<h2>such value</h2>
+	<div class='ticker doge'>
+		<span behavior="alternate" direction="right" scrollamount=100 style='font-size: 75px; width: 600px;'><?php echo $ticker->last." BTC"; ?> (£<?php echo round(($ticker->last * $balance) * $btc->GBP->last, 2); ?>)</span>
+	</div>
 </div>
 
-<h2>History</h2>
+<div style='float: right'>
+	<h2>so difficult</h2>
+	<div>
+		<marquee behavior="alternate" direction="right" scrollamount=100 style="color: pink; font-size: 75px; width: 600px;"><?php echo $diff; ?> :D</marquee>
+	</div>
+</div>
+
+<h2 style='clear: both;'>History</h2>
 
 <table>
 	<tr>
