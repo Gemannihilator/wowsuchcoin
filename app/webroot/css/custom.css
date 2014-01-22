@@ -7,7 +7,6 @@ h1{
 }
 
 table td {
-	font-weight: bolder;
 	font-size:	15px;
 }
 
@@ -21,11 +20,18 @@ div#testy{
 
 div#testy label{
 	color:	aquamarine;
+	font-weight:	bold;
+	font-size:	20px;
 }
 
-div#testy input{
-	color:	brown;
+form .submit input {
+	font-family : "Comic Sans MS", cursive, sans-serif;
 }
+
+input, textarea{
+	font-family : "Comic Sans MS", cursive, sans-serif;
+}
+
 
 div.doge span {
 	font-size: 60px;
